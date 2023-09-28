@@ -6,7 +6,7 @@ import End from "./components/End";
 import Question from "./components/Question";
 import Start from "./components/Start";
 import quizData from "./data/quiz.json";
-
+import MainLayout from './components/mainlayout'
 let interval;
 
 const App = () => {
@@ -23,17 +23,19 @@ const App = () => {
   }, [step]);
 
   return (
-    <div className="App">
-      {step === 1 && <Start />}
-      {step === 2 && <Question />}
-      {step === 3 && (
-        <End
-          data={quizData.data}
-          time={time}
-          onAnswersCheck={() => setShowModal(true)}
-        />
-      )}
-    </div>
+    <MainLayout>
+      <div className="App">
+        {step === 1 && <Start />}
+        {step === 2 && <Question />}
+        {step === 3 && (
+          <End
+            data={quizData.data}
+            time={time}
+            onAnswersCheck={() => setShowModal(true)}
+          />
+        )}
+      </div>
+    </MainLayout>
   );
 };
 

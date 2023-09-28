@@ -1,8 +1,9 @@
 * {
   font-family: "Verdana", cursive, sans-serif;
 }
+
 body {
-  background-color: #7cc6fe;
+  background-color: rgb(131, 5, 189);
   /* background-image: url(./assets/images/bg.jpg); */
   display: flex;
   justify-content: center;
@@ -14,17 +15,18 @@ body {
   background-color: #252d4a;
   /* background-color: #0083c0; */
   height: 50vh;
-   max-height: 600px;
+  max-height: 600px;
   width: 60vw;
   max-width: 800px;
   border-radius: 15px;
   padding: 20px;
   box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
 }
+
 /* /////////////////////////////////////////////// */
 /* /////////////////////  start ////////////////// */
 /* //////////////////////////////////////////////// */
-.button{
+.button {
   background: rgb(131, 5, 189);
   outline: none;
   border: none;
@@ -35,7 +37,8 @@ body {
   cursor: pointer;
   color: white;
 }
-.startBox{
+
+.startBox {
   color: white;
   height: 100%;
   display: flex;
@@ -43,7 +46,8 @@ body {
   justify-content: center;
   text-align: center;
 }
-.startButton{
+
+.startButton {
   background: rgb(131, 5, 189);
   outline: none;
   border: none;
@@ -54,7 +58,8 @@ body {
   cursor: pointer;
   color: white;
 }
-.timeInput{
+
+.timeInput {
   outline: none;
   border: none;
   width: 40px;
@@ -63,37 +68,44 @@ body {
   margin-left: 10px;
   text-align: center;
 }
-.timeInput::-webkit-inner-spin-button, 
-.timeInput::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+
+.timeInput::-webkit-inner-spin-button,
+.timeInput::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
+
 /* /////////////////////////////////////////////// */
 /* /////////////////////  question ////////////////// */
 /* //////////////////////////////////////////////// */
-.questionBox{
- position: relative;
- height: 100%;
- color: white;
+.questionBox {
+  position: relative;
+  height: 100%;
+  color: white;
 }
-.questionBox .questionHead{
+
+.questionBox .questionHead {
   display: flex;
   justify-content: space-between;
 }
-.middleBox{
+
+.middleBox {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-      "question option";
+    "question option";
 }
-.question{
+
+.question {
   grid-area: question;
 }
-.question p{
+
+.question p {
   font-size: 20px;
 }
-.option{
+
+.option {
   grid-area: option;
   display: flex;
   flex-direction: column;
@@ -101,7 +113,8 @@ body {
   text-align: center;
   justify-content: flex-start;
 }
-.option .text{
+
+.option .text {
   width: 80%;
   font-size: 16px;
   border-radius: 15px;
@@ -110,15 +123,18 @@ body {
   cursor: pointer;
   margin-bottom: 8px;
 }
-.option .text:hover{
+
+.option .text:hover {
   background: #234668;
 }
-.option .text input{
+
+.option .text input {
   position: fixed;
-opacity: 0;
-pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
 }
-.selected{
+
+.selected {
   background: rgb(131, 5, 189);
   width: 80%;
   font-size: 16px;
@@ -128,28 +144,33 @@ pointer-events: none;
   cursor: pointer;
   margin-bottom: 8px;
 }
-.option .selected input{
+
+.option .selected input {
   position: fixed;
-opacity: 0;
-pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
 }
-.questionBottom{
+
+.questionBottom {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
-.nextBtn{
+
+.nextBtn {
   float: right;
 }
+
 /* /////////////////////////////////////////////// */
 /* /////////////////////  end ////////////////// */
 /* //////////////////////////////////////////////// */
-.endBox{
+.endBox {
   align-items: center;
   text-align: center;
   color: white;
 }
-.trophy{
+
+.trophy {
   height: 50px;
 }
 
@@ -160,7 +181,7 @@ pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
-  width:100%;
+  width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
 }
@@ -173,9 +194,9 @@ pointer-events: none;
   color: black;
   width: 50%;
   height: 80%;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   overflow: auto;
 }
 
@@ -186,16 +207,19 @@ pointer-events: none;
 .display-none {
   display: none;
 }
-.modalBody{
+
+.modalBody {
   text-align: left;
 }
-.modalBody header{
+
+.modalBody header {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
   padding: 10px;
 }
-.bg-success{
+
+.bg-success {
   background: #48c774;
   color: white;
   padding: 10px;
@@ -203,7 +227,8 @@ pointer-events: none;
   font-size: 13px;
   font-weight: 500;
 }
-.bg-warning{
+
+.bg-warning {
   background: #3273dc;
   color: white;
   padding: 10px;
@@ -211,11 +236,26 @@ pointer-events: none;
   font-size: 13px;
   font-weight: 300;
 }
-.bg-danger{
+
+.bg-danger {
   background: #f14668;
   color: white;
   padding: 10px;
   width: 90%;
   font-size: 13px;
   font-weight: 500;
+}
+
+.logoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  height: 80px;
+  width: 200px;
+  top: 90px;
+  /* margin-bottom: 20px; */
 }
