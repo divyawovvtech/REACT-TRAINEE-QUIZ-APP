@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/REACT-TRAINEE-QUIZ-APP/static/css/main.a7a5d088.chunk.css",
+    "main.js": "/REACT-TRAINEE-QUIZ-APP/static/js/main.bb921f19.chunk.js",
+    "main.js.map": "/REACT-TRAINEE-QUIZ-APP/static/js/main.bb921f19.chunk.js.map",
+    "runtime-main.js": "/REACT-TRAINEE-QUIZ-APP/static/js/runtime-main.ec6654ce.js",
+    "runtime-main.js.map": "/REACT-TRAINEE-QUIZ-APP/static/js/runtime-main.ec6654ce.js.map",
+    "static/js/2.ac223dd1.chunk.js": "/REACT-TRAINEE-QUIZ-APP/static/js/2.ac223dd1.chunk.js",
+    "static/js/2.ac223dd1.chunk.js.map": "/REACT-TRAINEE-QUIZ-APP/static/js/2.ac223dd1.chunk.js.map",
+    "static/js/3.f6120542.chunk.js": "/REACT-TRAINEE-QUIZ-APP/static/js/3.f6120542.chunk.js",
+    "static/js/3.f6120542.chunk.js.map": "/REACT-TRAINEE-QUIZ-APP/static/js/3.f6120542.chunk.js.map",
+    "index.html": "/REACT-TRAINEE-QUIZ-APP/index.html",
+    "static/css/main.a7a5d088.chunk.css.map": "/REACT-TRAINEE-QUIZ-APP/static/css/main.a7a5d088.chunk.css.map",
+    "static/js/2.ac223dd1.chunk.js.LICENSE.txt": "/REACT-TRAINEE-QUIZ-APP/static/js/2.ac223dd1.chunk.js.LICENSE.txt",
+    "static/media/trophy.16e6df06.png": "/REACT-TRAINEE-QUIZ-APP/static/media/trophy.16e6df06.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ec6654ce.js",
+    "static/js/2.ac223dd1.chunk.js",
+    "static/css/main.a7a5d088.chunk.css",
+    "static/js/main.bb921f19.chunk.js"
+  ]
+}
