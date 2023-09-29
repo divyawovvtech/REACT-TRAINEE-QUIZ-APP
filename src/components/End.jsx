@@ -29,6 +29,11 @@ const End = () => {
     content: () => reactToPrintRef.current,
     documentTitle: 'Quiz Result'
   });
+  function toTime(seconds) {
+    var date = new Date(null);
+    date.setSeconds(seconds);
+    return date.toISOString().substr(11, 8);
+ }
   return (
     <div className="endBox">
       <img src={Trophy} className="trophy" alt="" srcset="" />
@@ -42,7 +47,7 @@ const End = () => {
         </strong>
       </p>
       <p>
-        <strong>Your time:</strong> {time}sec
+        <strong>Your time:</strong> {toTime(time)}
       </p>
       <section>
         <button className="button" onClick={() => setModal(true)}>
@@ -82,7 +87,7 @@ const End = () => {
                 </strong>
               </p>
               <p style={{marginTop:1}}>
-                <strong>Your time:</strong> {time}sec
+                <strong>Your time:</strong> {toTime(time)}
               </p>
             </div>
             <section className="content">

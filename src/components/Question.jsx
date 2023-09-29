@@ -80,13 +80,18 @@ const Question = () => {
       })
     );
   };
+  function toTime(seconds) {
+    var date = new Date(null);
+    date.setSeconds(seconds);
+    return date.toISOString().substr(11, 8);
+ }
   return (
     <div className="questionBox">
       <section className="questionHead">
         <h3>
           Question {activeQuestion + 1}/{quizData?.data.length}
         </h3>
-        <h5>{timer}</h5>
+        <h5>{toTime(timer)}</h5>
       </section>
       <section className="middleBox">
         <div className="question">

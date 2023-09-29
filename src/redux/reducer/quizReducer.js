@@ -4,7 +4,7 @@ const initialState = {
     step : 1,
     activeQuestion: 0,
     answers: [],
-    time: 60
+    time: 3600
 }
 
 const quizReducer = (state = initialState , action) =>{

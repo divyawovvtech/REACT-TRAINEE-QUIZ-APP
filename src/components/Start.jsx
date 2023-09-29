@@ -5,37 +5,40 @@ import { startQuiz } from "../redux/action/quizAction";
 const Start = () => {
   const dispatch = useDispatch();
   // const {time} = useSelector(state => state.quizReducer)
-  const [minute, setMinute] = useState(1);
+  const [minute, setMinute] = useState(60);
   const [second, setSecond] = useState(0);
-  const [time, setTime] = useState(60);
+  const [time, setTime] = useState(3600);
   const handleQuizStart = () => {
     dispatch(startQuiz(time));
   };
   useEffect(() => {
-    if (minute > 59) {
-      setMinute(1);
-    }
-    if (second > 59) {
-      setSecond(1);
-    }
+    // if (minute > 59) {
+    //   setMinute(1);
+    // }
+    // if (second > 59) {
+    //   setSecond(1);
+    // }
   }, [minute, second]);
   useEffect(() => {
-    console.log(minute);
-    console.log(typeof minute);
-    if (minute !== NaN && second !== NaN) {
-      setTime(minute * 60 + second);
-    }
+    const totalSeconds = minute * 60 + second;
+    setTime(totalSeconds);
   }, [minute, second]);
+  function toTime(seconds) {
+    var date = new Date(null);
+    date.setSeconds(seconds);
+    return date.toISOString().substr(11, 8);
+ }
   return (
     <div className="startBox">
       <div>
         <div>
-          <h1>Start the Quiz</h1>
+          <h2>Welcome to Wovvtech React Builder Test</h2>
           <p>Good luck!</p>
-          <p>Time:&nbsp;&nbsp;{time}sec</p>
+          <p>Time:&nbsp;&nbsp;{toTime(time)} hours</p>
           <section>
             <label htmlFor="">
               <input
+               disabled={true}
                 type="number"
                 className="timeInput"
                 value={minute}
@@ -45,6 +48,7 @@ const Start = () => {
             </label>
             <label htmlFor="">
               <input
+              disabled={true}
                 type="number"
                 className="timeInput"
                 value={second}
@@ -54,7 +58,7 @@ const Start = () => {
             </label>
           </section>
           <button className="startButton" onClick={handleQuizStart}>
-           LET'S START
+           LET'S GO
           </button>
         </div>
       </div>

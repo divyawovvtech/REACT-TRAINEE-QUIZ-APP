@@ -1,6 +1,106 @@
 {
   "data": [
     {
+      "question": "In a builder project, in which directory should we run the yarn command to install the library?",
+      "choices": [
+        "web/src",
+        "root/src",
+        "root/src/packages/blocks/core",
+        "src/packages/blocks/mobile"
+      ],
+      "answer": "root/src/packages/blocks/core"
+    },
+    {
+      "question": "In a builder project, what is the correct way to install a third-party library?",
+      "choices": [
+        "In the root/src directory, we should run 'yarn add packagename -W'.",
+        "In the root/src/packages/blocks/core directory, we should run 'yarn add packagename', and then specify the path of the package in the root/src/package.json file.",
+        "In the root/src/packages/block directory, we should run 'yarn add packagename -W'.",
+        "None of these"
+      ],
+      "answer": "In the root/src/packages/blocks/core directory, we should run 'yarn add packagename', and then specify the path of the package in the root/src/package.json file."
+    },
+    {
+      "question": "What is the command to start the React project and in which directory should we run this command?",
+      "choices": [
+        "web/src: 'yarn workspace web start'",
+        "root/src: 'yarn workspace web start'",
+        "root/src/packages/blocks/core: 'yarn workspace web start'",
+        "src/packages/blocks/mobile: 'yarn workspace web start'"
+      ],
+      "answer": "root/src/packages/blocks/core: 'yarn workspace web _start'"
+    },
+    {
+      "question": "In the builder, what command should we use to check TypeScript errors, and in which directory should we run it?",
+      "choices": [
+        "web/src: 'yarn workspace web _compile'",
+        "root/src: 'yarn workspace web compile'",
+        "root/src/packages/blocks/core: 'yarn workspace web start'",
+        "src/packages/blocks/mobile: 'yarn workspace web build'"
+      ],
+      "answer": "root/src: 'yarn workspace web compile'"
+    },
+    {
+      "question": "In the builder, what command should we use for production build, and in which directory should we run it?",
+      "choices": [
+        "web/src: 'yarn workspace web start'",
+        "root/src: 'yarn workspace web build'",
+        "root/src/packages/blocks/core: 'yarn workspace web _build'",
+        "src/packages/blocks/mobile: 'yarn workspace web build'"
+      ],
+      "answer": "root/src: 'yarn workspace web build'"
+    },
+    {
+      "question": "In the builder, if we build our project for production deployment, in which directory will it generate?",
+      "choices": [
+        "root/src/packages/web/src",
+        "root/src",
+        "root/src/packages/blocks/core",
+        "src/packages/blocks/mobile"
+      ],
+      "answer": "root/src/packages/web/src"
+    },
+    {
+      "question": "In the builder for a React JS web app, in which directory do we define the routes?",
+      "choices": [
+        "root/src/packages/web/src/app.tsx",
+        "root/src/app.tsx",
+        "root/src/packages/blocks/core/app.tsx",
+        "src/packages/blocks/mobile/app.tsx"
+      ],
+      "answer": "root/src/packages/web/src/app.tsx"
+    },
+    {
+      "question": "In the builder, if we modify or update any blocks of a file, what should we make sure of regarding our code?",
+      "choices": [
+        "Our code should be inside the customization area (between 'customization area start' and 'customization area end').",
+        "Our code should be outside the customization area (not between 'customization area start' and 'customization area end').",
+        "We should update or customize the code as per our requirement.",
+        "None of these"
+      ],
+      "answer": "Our code should be inside the customization area (between 'customization area start' and 'customization area end')."
+    },
+    {
+      "question": "In the builder, for every block, why are we using a controller file?",
+      "choices": [
+        "We are using it for UI development.",
+        "We are using it for API integration logic and business logic.",
+        "We are using it for project setup.",
+        "None of these"
+      ],
+      "answer": "We are using it for API integration logic and business logic."
+    },
+    {
+      "question": "In the builder, which directory or file should we use to define API endpoints?",
+      "choices": [
+        "web/src/app.tsx",
+        "root/src/packages/blocks/index.tsx",
+        "root/src/packages/framework/src/config.js",
+        "src/packages/blocks/mobile/src/app.tsx"
+      ],
+      "answer": "root/src/packages/framework/src/config.js"
+    },
+    {
       "question": "Which command is used to initialize a new React Native project?",
       "choices": [
         "npm start",
