@@ -54,7 +54,7 @@ const Start = () => {
             </label>
           </section>
           <button className="startButton" onClick={handleQuizStart}>
-            START
+           LET'S START
           </button>
         </div>
       </div>
